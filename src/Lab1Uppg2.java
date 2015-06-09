@@ -30,7 +30,8 @@ public class Lab1Uppg2 {
     
     public static void main(String[] args) {
         /* Deklarara variabler och nytt Scanner-objekt för att läsa I/O. */
-        Scanner scan = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
         int input, sum = 0;
         double average = 0;
         long product = 0; /* Kan räkna med att produkten kan bli väldigt stor */
