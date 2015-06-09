@@ -16,10 +16,10 @@ public class Lab1Uppg1 {
 		int data3 = 29;
 		boolean data4 = data3 < 10;
 
-		/* Även om typen double klarar decimaltal så är 12 och 5 båda av typen
-		 * int per default och decimaldelen går förlorad.
-		 * Alltså skulle int gå lika bra. */
-		double data5 = 12 / 5;
+		/* Även om data5 skulle vara av typen double som klarar decimaltal,
+		 * så är 12 och 5 båda av typen int per default och decimaldelen 
+		 * går förlorad. Därmed kan data5 ha typen 'int. */
+		int data5 = 12 / 5;
 		
 		/* Då varken data3 eller data5 är decimaltal kan int också användas. */ 
 		double data6 = data3 * data5;
