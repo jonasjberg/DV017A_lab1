@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /* 
  *  DV017A :: Grundläggande programmering i Java
  *  ============================================
@@ -10,6 +8,8 @@ import java.util.Scanner;
  *  Labb #1
  *  Uppgift 3
  */
+
+import java.util.Scanner;
 
 public class Lab1Uppg3 {
 
