@@ -20,17 +20,17 @@ public class Lab1Uppg4 {
 
         int age = 0;
 
-        System.out.print("Hur gammal är du?");
-
         do {
         /* Loopa tills 'age' är nollskiljd och positiv. */
+        System.out.print("Hur gammal är du?");
+
             while (!scan.hasNextInt()) {
                 /* Loopa tills nästa "token" i scan's lista går att parsea till en
                  * int. Avgränsare mellan "tokens" är whitespace som standard,
                  * där whitespace är mellanslag och andra tecken som motsvarar
                  * tomt vertikalt eller horisontellt utrymme i text.
                  */
-                System.out.println("Felaktig inmatning!\nHur gammal är du?");
+                System.out.println("Hur gammal är du?");
                 scan.next();
             }
 
