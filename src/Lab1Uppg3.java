@@ -25,6 +25,13 @@ public class Lab1Uppg3 {
 
         double kilometer = mil * 1000;
         
-        System.out.println("Motsvarande antal km: " + kilometer);
+        /* Skriv ut med 'format', ekvivalent med 'printf' som i sin tur känns
+         * igen från C-liknande språk. 
+         * 
+         * %.0f		Float with zero places after decimal point.		
+         * %n		A new line character appropriate to the platform running the
+         *          application. You should always use %n, rather than \n.  
+         */
+        System.out.format("Motsvarande antal kilometer: %.0f%n", kilometer);
 	}
 }
