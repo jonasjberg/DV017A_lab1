@@ -9,10 +9,36 @@
  *  Uppgift 4
  */
 
+import java.util.Scanner;
+
 public class Lab1Uppg4 {
-
+	
 	public static void main(String[] args) {
+        /* Skapa Scanner-objekt för att läsa I/O. Ignorera IDE:ns varningar. */
+        @SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
+        
+        int age = 0;
 
+        System.out.print("Hur gammal är du?");
+    	
+    	do {
+        /* Loopa tills 'age' är nollskiljd och positiv. */
+    		while (!scan.hasNextInt()) {
+    			/* Loopa tills nästa "token" i scan's lista går att parsea till en
+    			 * int. Avgränsare mellan "tokens" är whitespace som standard, 
+    			 * där whitespace är mellanslag och andra tecken som motsvarar
+    			 * tomt vertikalt eller horisontellt utrymme i text.
+    			 */
+    			System.out.println("Felaktig inmatning!\nHur gammal är du?");
+    			scan.next();
+    		}
+    		
+    		/* Scan måste hålla en int i sin "lista" som är OK att använda. */
+    		age = scan.nextInt();
+
+    	} while (age <= 0);
+    	
+    	System.out.println("Hej, din " + age + "-åring!");
 	}
-
 }
