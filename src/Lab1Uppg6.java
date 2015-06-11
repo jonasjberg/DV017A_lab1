@@ -48,13 +48,29 @@ public class Lab1Uppg6 {
         } while (start <= 0);
 
 
-        while (start > 0) {
+        System.out.println("for-loop:");
+        for (int i = start; i > 0; i--) {
+            System.out.print(i + " ");
+        }        
+        
+        System.out.println("\n\ndo-loop:");
+        
+        int i = start;
+        do {
+            System.out.print(i + " ");
+            i--;
+		} while (i > 0);
+
+        int j = start;
+        System.out.println("\n\nwhile-loop:");
+        while (j > 0) {
 //        	if ((boolean) start % 2){
 //        		System.out.print(" ");
 //        	}
-            System.out.print(start + " ");
-            start--;
+            System.out.print(j + " ");
+            j--;
         }
+
 
 //		Ange det heltal som du vill räkna ner från: 6
 //		6 5 4 3 2 1

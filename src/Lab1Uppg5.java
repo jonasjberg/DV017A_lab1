@@ -20,7 +20,7 @@ public class Lab1Uppg5 {
         @SuppressWarnings("resource")
         Scanner scan = new Scanner(System.in);
 
-        int start = 0;
+        int start = -1;
 
         do {
         /* Loopa tills inmatning är ett nollskiljt och positivt heltal. */
