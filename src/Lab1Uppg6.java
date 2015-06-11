@@ -25,7 +25,6 @@ public class Lab1Uppg6 {
          * 'start' faktiskt håller en integer och do-loopens conditional kan
          * utvärderas säkert.
          */
-
         int start = -1;
 
         do {
@@ -48,35 +47,23 @@ public class Lab1Uppg6 {
         } while (start <= 0);
 
 
+        /* Räkna ner från 'start' till 1 med en **for-loop**. */
         System.out.println("for-loop:");
         for (int i = start; i > 0; i--) {
             System.out.print(i + " ");
         }        
         
         System.out.println("\n\ndo-loop:");
-        
+
+        /* Räkna ner från 'start' till 1 med en **do-loop**. */
         int i = start;
         do {
             System.out.print(i + " ");
             i--;
 		} while (i > 0);
 
-        int j = start;
-        System.out.println("\n\nwhile-loop:");
-        while (j > 0) {
-//        	if ((boolean) start % 2){
-//        		System.out.print(" ");
-//        	}
-            System.out.print(j + " ");
-            j--;
-        }
-
-
-//		Ange det heltal som du vill räkna ner från: 6
-//		6 5 4 3 2 1
 
         /* Returnera lyckad exekvering oavsett hur det faktiskt gick. */
         System.exit(0);
     }
 }
-

@@ -1,15 +1,15 @@
-import java.util.Scanner;
-
 /*
  *  DV017A :: Grundläggande programmering i Java
  *  ============================================
- *  Uppdaterad 2015-06-09
+ *  Uppdaterad 2015-06-11
  *  Jonas Sjöberg, Högskolan i Gävle.
  *  <tel12jsg@student.hig.se>
  *
  *  Labb #1
  *  Uppgift 5
  */
+
+import java.util.Scanner;
 
 public class Lab1Uppg5 {
 
@@ -20,6 +20,11 @@ public class Lab1Uppg5 {
         @SuppressWarnings("resource")
         Scanner scan = new Scanner(System.in);
 
+        /* Att 'start' får värdet -1 gör ingen faktiskt skillnad eftersom att
+         * 'scan' garanterar att den inre while-loopen inte avslutas förrän
+         * 'start' faktiskt håller en integer och do-loopens conditional kan
+         * utvärderas säkert.
+         */
         int start = -1;
 
         do {
@@ -41,18 +46,13 @@ public class Lab1Uppg5 {
 
         } while (start <= 0);	
         
-        
+        /* Räkna ner från 'start' till 1 med en **while-loop**. */
         while (start > 0) {
-//        	if ((boolean) start % 2){
-//        		System.out.print(" ");
-//        	}
         	System.out.print(start + " ");
         	start--;
         }
  
-//		Ange det heltal som du vill räkna ner från: 6
-//		6 5 4 3 2 1
-        
+
         /* Returnera lyckad exekvering oavsett hur det faktiskt gick. */
         System.exit(0);
 	}
