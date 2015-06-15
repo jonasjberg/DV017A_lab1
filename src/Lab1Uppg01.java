@@ -18,10 +18,11 @@ public class Lab1Uppg01 {
 
         /* Även om data5 skulle vara av typen double som klarar decimaltal,
          * så är 12 och 5 båda av typen int per default och decimaldelen
-         * går förlorad. Därmed kan data5 ha typen 'int. */
+         * går förlorad. Därmed kan data5 ha typen 'int' med lika verkan. */
         int data5 = 12 / 5;
 
-        /* Då varken data3 eller data5 är decimaltal kan int också användas. */
+        /* Då varken data3 eller data5 är decimaltal kan 'int' också användas 
+         * utan att någon information går förlorad. */
         double data6 = data3 * data5;
 
         int data7 = 10 % 3;
