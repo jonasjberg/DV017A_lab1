@@ -65,8 +65,7 @@ public class Lab1Uppg6 {
         @SuppressWarnings("resource")
         Scanner scan = new Scanner(System.in);
 
-        /* Rutinen för att filtrera inmatningen är likadan som i Uppgift #5. 
-           För kommentarer rörande rader 25-37, var vänlig se Uppgift #5. */
+        /* Rutinen för att filtrera inmatningen är likadan som i Uppgift #5. */
         int start = -1;
 
         do {
