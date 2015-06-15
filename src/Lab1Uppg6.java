@@ -20,40 +20,30 @@ public class Lab1Uppg6 {
         @SuppressWarnings("resource")
         Scanner scan = new Scanner(System.in);
 
-        /* Att 'start' får värdet -1 gör ingen faktiskt skillnad eftersom att
-         * 'scan' garanterar att den inre while-loopen inte avslutas förrän
-         * 'start' faktiskt håller en integer och do-loopens conditional kan
-         * utvärderas säkert.
-         */
+        /* Rutinen för att filtrera inmatningen är likadan som i Uppgift #5. 
+           För kommentarer rörande rader 25-37, var vänlig se Uppgift #5. */
         int start = -1;
 
         do {
-        /* Loopa tills inmatning är ett nollskiljt och positivt heltal. */
             System.out.print(QUERY);
 
             while (!scan.hasNextInt()) {
-                /* Loopa tills nästa "token" i scan's lista går att parsea till en
-                 * int. Avgränsare mellan "tokens" är whitespace som standard,
-                 * där whitespace är mellanslag och andra tecken som motsvarar
-                 * tomt vertikalt eller horisontellt utrymme i text.
-                 */
                 System.out.print(QUERY);
                 scan.next();
             }
 
-            /* Scan måste hålla en int i sin "lista" som är OK att använda. */
             start = scan.nextInt();
 
         } while (start <= 0);
 
 
         /* Räkna ner från 'start' till 1 med en **for-loop**. */
-        System.out.println("for-loop:");
+        System.out.println("\n\nRäknar ner med en \"for\"-loop ..");
         for (int i = start; i > 0; i--) {
             System.out.print(i + " ");
         }        
         
-        System.out.println("\n\ndo-loop:");
+        System.out.println("\n\nRäknar ner med en \"do\"-loop ..");
 
         /* Räkna ner från 'start' till 1 med en **do-loop**. */
         int i = start;
