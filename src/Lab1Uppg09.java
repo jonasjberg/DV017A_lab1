@@ -9,8 +9,6 @@
  *  Uppgift 9
  */
 
-import java.util.Scanner;
-
 public class Lab1Uppg09 {
 	
 	/* Tal att räkna upp till. */
@@ -23,6 +21,8 @@ public class Lab1Uppg09 {
 	int number = UPPER_LIMIT;
 	int sum = 0;
 	
+	/* Använder 'number' som loop-räknare. Flyttar över 2 från 'number' till 
+	 * 'sum' per iteration. */
 	while (number > 0) {
 		sum += number;
 		
@@ -38,6 +38,8 @@ public class Lab1Uppg09 {
 	number = UPPER_LIMIT;
 	sum = 0;
 
+	/* Använder 'number' som loop-räknare. Flyttar över 2 från 'number' till 
+	 * 'sum' per iteration. */
 	do {
 		sum += number;
 		number -= 2;

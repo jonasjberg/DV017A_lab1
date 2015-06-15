@@ -22,7 +22,7 @@ public class Lab1Uppg04 {
 
         do {
         /* Loopa tills 'age' är nollskiljd och positiv. */
-        System.out.print("Hur gammal är du?");
+        System.out.print("Hur gammal är du? ");
 
             while (!scan.hasNextInt()) {
                 /* Loopa tills nästa "token" i scan's lista går att parsea till en
