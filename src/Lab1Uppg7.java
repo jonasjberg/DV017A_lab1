@@ -18,35 +18,46 @@ public class Lab1Uppg7 {
     public static void main(String[] args) {
 
     System.out.println("Var vänlig mata in heltal för variabler;");
-    int var1 = getUserInput("var 1");
-    int var2 = getUserInput("var 2");
-    int var3 = getUserInput("var 3");
+    int var1 = getUserInput("var 1: ");
+    int var2 = getUserInput("var 2: ");
+    int var3 = getUserInput("var 3: ");
 
 
     // a) Talet var1 är jämnt delbart med 7.
-    svar = canDivideEvenly(var1, 7);
+    //svar = canDivideEvenly(var1, 7);
+    svar = var1 % 7 == 0 ? true : false;
 
     if (svar) {
-    	System.out.println("Talet var1 är jämnt delbart med 7.");
-    } 
-//    else {
-//    	System.out.println("Talet var1 är inte jämnt delbart med 7.");
-//    }
+    	System.out.println("Talet " + var1 + " är jämnt delbart med 7.");
+    } else {
+    	System.out.println("Talet " + var1 + " är inte jämnt delbart med 7.");
+    }
 
     // b) Talet var3 är inte jämnt delbart med talet var2.
-    svar = ! canDivideEvenly(var3, var2);
+//    svar = ! canDivideEvenly(var3, var2);
+    svar = !(var3 % var2 == 0 ? true : false);
 
     if (svar) {
-    	System.out.println("Talet var3 är inte jämnt delbart med talet var2.");
+    	System.out.println("Talet " + var3 + " är inte jämnt delbart med talet " + var2 + ".");
+    } else {
+    	System.out.println("Talet " + var3 + " är jämnt delbart med talet " + var2 + ".");
     } 
-//    else {
-//    	System.out.println("Talet var3 är jämnt delbart med talet var2.");
-//    }
     
     // c) Talet var1 är större än minst något av talen var2 och var3.
-    svar = (var1 > var2 ? true : false) || (var1 > var3 ? true : false);
+    svar = ((var1 > var2 ? true : false) || (var1 > var3 ? true : false)) ? true : false;
+
+//    System.out.println("var1 > var2 ? " + (var1 > var2 ? "true" : "false"));
+//    System.out.println("var1 > var3 ? " + (var1 > var3 ? "true" : "false"));
+//    System.out.println("true || true ? " + (true || true ? "true" : "false"));
+//    System.out.println("false || true ? " + (false || true ? "true" : "false"));
+//    System.out.println("true || false ? " + (true || false ? "true" : "false"));
+//    System.out.println("false || false ? " + (false || false ? "true" : "false"));
+
+
     if (svar) {
-    	System.out.println("Talet var1 är större än minst något av talen var2 och var3.");
+    	System.out.println("Talet " + var1 + " är större än minst något av talen " + var2 + " och " + var3 + ".");
+    } else {
+    	System.out.println("Talet " + var1 + " är inte större än minst något av talen " + var2 + " och " + var3 + ".");
     }
     
     // d) Talet var1 är större än talet var2, som i sin tur är större än talet var3.
