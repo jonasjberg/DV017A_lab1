@@ -9,7 +9,7 @@
  *  Uppgift 1
  */
 
-public class Lab1Uppg1 {
+public class Lab1Uppg01 {
     public static void main(String[] args) {
         boolean data1 = true;
         float data2 = 45.8F;

@@ -11,7 +11,7 @@
 
 import java.util.Scanner;
 
-public class Lab1Uppg7 {
+public class Lab1Uppg07 {
 
     private static boolean svar;
 
@@ -86,6 +86,8 @@ public class Lab1Uppg7 {
     /**
      * getUserInput
      * Hämtar ett positivt heltal från användaren.
+     * Textsträngen 'query' skrivs ut tills dess att användaren matat in ett 
+     * positivt heltal.
      *
      * @return ett positivt heltal från användaren.
      */
@@ -95,7 +97,7 @@ public class Lab1Uppg7 {
         Scanner scan = new Scanner(System.in);
 
         /* Rutinen för att filtrera inmatningen är likadan som i Uppgift #5. */
-        int start = -1;
+        int input = -1;
 
         do {
             System.out.print(query);
@@ -105,12 +107,12 @@ public class Lab1Uppg7 {
                 scan.next();
             }
 
-            start = scan.nextInt();
+            input = scan.nextInt();
 
-        } while (start <= 0);
+        } while (input <= 0);
 
         /* Returnera inmatat positivt heltal. */
-        return start;
+        return input;
     }
 
 }

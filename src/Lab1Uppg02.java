@@ -11,7 +11,7 @@
 
 import java.util.Scanner;
 
-public class Lab1Uppg2 {
+public class Lab1Uppg02 {
 
     /* Konstant värde, typ #define i C-liknande språk med en pre-processor.
      * ITERATIONS är antalet tal som ska matas in. Konstant vid exekvering. */

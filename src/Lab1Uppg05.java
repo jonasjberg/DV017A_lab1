@@ -11,7 +11,7 @@
 
 import java.util.Scanner;
 
-public class Lab1Uppg5 {
+public class Lab1Uppg05 {
 
 	private static final String QUERY = "Ange det heltal som du vill räkna ner från: ";
 

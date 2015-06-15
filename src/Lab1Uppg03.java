@@ -11,7 +11,7 @@
 
 import java.util.Scanner;
 
-public class Lab1Uppg3 {
+public class Lab1Uppg03 {
 
     public static void main(String[] args) {
         /* Skapa Scanner-objekt för att läsa I/O. Ignorera IDE:ns varningar. */

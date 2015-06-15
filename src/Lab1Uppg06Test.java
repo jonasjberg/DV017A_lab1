@@ -19,7 +19,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 
-public class Lab1Uppg6Test extends TestCase {
+public class Lab1Uppg06Test extends TestCase {
 /*
    Source:
    http://stackoverflow.com/questions/1119385/junit-test-for-system-out-println
@@ -27,7 +27,7 @@ public class Lab1Uppg6Test extends TestCase {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
 
-    Lab1Uppg6 uppg6 = new Lab1Uppg6();
+    Lab1Uppg06 uppg6 = new Lab1Uppg06();
 
     @Before
     //public void setUpStreams() {
