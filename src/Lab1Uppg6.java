@@ -16,7 +16,52 @@ public class Lab1Uppg6 {
     private static final String QUERY = "Ange det heltal som du vill räkna ner från: ";
 
     public static void main(String[] args) {
-		/* Skapa Scanner-objekt för att läsa I/O. Ignorera IDE:ns varningar. */
+        int start = getUserInput();
+
+        /* Räkna ner från 'start' till 1 med en **DO-loop**. */
+        System.out.println("\n\nRäknar ner med en \"do\"-loop ..");
+        countDownUsingDoLoop(start);
+
+        /* Räkna ner från 'start' till 1 med en **FOR-loop**. */
+        System.out.println("\n\nRäknar ner med en \"for\"-loop ..");
+        countDownUsingForLoop(start);
+
+        /* Returnera lyckad exekvering oavsett hur det faktiskt gick. */
+        System.exit(0);
+    }
+
+    /**
+     * Räkna ner från 'start' till 1 med en **for-loop**.
+     * @param start startvärde att börja räkna ner ifrån
+     */
+    protected static void countDownUsingForLoop(int start)
+    {
+        for (int i = start; i > 0; i--) {
+            System.out.print(i + " ");
+        }
+    }
+
+    /**
+     * Räkna ner från 'start' till 1 med en **do-loop**.
+     * @param start startvärde att börja räkna ner ifrån
+     */
+    protected static void countDownUsingDoLoop(int start)
+    {
+        int i = start;
+        do {
+            System.out.print(i + " ");
+            i--;
+        } while (i > 0);
+    }
+
+    /**
+     * getUserInput
+     * Hämtar ett positivt heltal från användaren.
+     *
+     * @return ett positivt heltal från användaren.
+     */
+    protected static int getUserInput() {
+        /* Skapa Scanner-objekt för att läsa I/O. Ignorera IDE:ns varningar. */
         @SuppressWarnings("resource")
         Scanner scan = new Scanner(System.in);
 
@@ -36,24 +81,8 @@ public class Lab1Uppg6 {
 
         } while (start <= 0);
 
-
-        /* Räkna ner från 'start' till 1 med en **for-loop**. */
-        System.out.println("\n\nRäknar ner med en \"for\"-loop ..");
-        for (int i = start; i > 0; i--) {
-            System.out.print(i + " ");
-        }        
-        
-        System.out.println("\n\nRäknar ner med en \"do\"-loop ..");
-
-        /* Räkna ner från 'start' till 1 med en **do-loop**. */
-        int i = start;
-        do {
-            System.out.print(i + " ");
-            i--;
-		} while (i > 0);
-
-
-        /* Returnera lyckad exekvering oavsett hur det faktiskt gick. */
-        System.exit(0);
+        /* Returnera inmatat positivt heltal. */
+        return start;
     }
 }
+
