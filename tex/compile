@@ -8,12 +8,22 @@
 INPUT="${1}"
 OUTPUT="build"
 
+if [[ "${INPUT}" && "${INPUT-x}" ]];
+then
 
-mkdir -pv ${OUTPUT}
+    mkdir -pv ${OUTPUT}
 
-echo "running pdflatex .."
+    echo "Running pdflatex .."
+    
+    pdflatex -synctex=1 -interaction=nonstopmode -shell-escape \
+    --output-directory="${OUTPUT}" "${INPUT}"
+    
+    echo ".. Done running pdflatex!"
+    exit $?
 
-pdflatex -synctex=1 -interaction=nonstopmode -shell-escape \
---output-directory="${OUTPUT}" "${INPUT}"
+else
+    echo "Compile WHAT?" 1>&2
+    echo "Usage: $0 <texsourcefile.tex>" 1>&2
 
-echo "done running pdflatex!"
+    exit 1
+fi
