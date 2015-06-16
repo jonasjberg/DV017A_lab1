@@ -13,7 +13,17 @@
 \end{verbatim}
 
 \subsection{Kommentar}
-
+En \texttt{static final} variabel \texttt{QUERY} håller en textsträng som ska
+skrivas ut till användaren senare under programmets exekvering.
+Variabler med enbart versaler är en slags globala variabler som kan modifieras
+av programmeraren, likt det en gör med \texttt{\#define} i C-liknande språk för
+att undvika att ''hårdkoda'' t.ex. textsträngar.
+\par Logiken för att kontrollera korrekt inmatning är samma som den i Uppgift
+\ref{uppgift-4}.
+\par När variabeln \texttt{start} innehåller ett positivt heltal används en
+\texttt{while}-loop för att skriva ut en nedräkning på skärmen. Extra mellanslag
+läggs till genom att textsträngen \texttt{start} och ett mellanslag 
+\texttt{(''\ '')} konkateneras genom summering, en funktion som särskiljer Java.
 
 \subsection{Källkod}\label{uppgift-5_src}
 \subsubsection*{Lab1Uppg05.java}

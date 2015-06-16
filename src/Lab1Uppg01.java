@@ -21,7 +21,7 @@ public class Lab1Uppg01 {
          * går förlorad. Därmed kan data5 ha typen 'int' med lika verkan. */
         int data5 = 12 / 5;
 
-        /* Då varken data3 eller data5 är decimaltal kan 'int' också användas 
+        /* Då varken data3 eller data5 är decimaltal kan 'int' också användas
          * utan att någon information går förlorad. */
         double data6 = data3 * data5;
 

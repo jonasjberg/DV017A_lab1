@@ -8,12 +8,24 @@
 \end{verbatim}
 
 \subsection{Kommentar}
-% TODO: Kommentar på #6.
+Programmet använder återigen samma logik för att kontrollera korrekt inmatning
+men till skillnad från i Uppgift \ref{uppgift-4} och Uppgift \ref{uppgift-5}
+används en funktion \texttt{getUserInput()}.
+\par Koden blir modulär och enklare att hantera. Funktionens åtkomstmodifierare
+\texttt{static} gör funktionen till en klassfunktion, alla objekt som instanstieras
+från klassen delar funktionen. Funktionen hör till klassen, inte objekten.
+\texttt{protected} gör functionen ''synlig'' inom paketet.
+\par Själva nedräkningen görs också med funktioner. 
+\texttt{protected static void countDownUsingForLoop(int start)} räknar ner från
+parametervärdet \texttt{start} med hjälp av en \texttt{for}-loop.
+\texttt{protected static void countDownUsingDoLoop(int start)} räknar ner från
+parameter värdet \texttt{start} med hjälp av en \texttt{do}-loop.
+
 
 \subsection{Källkod}\label{uppgift-6_src}
 \subsubsection*{Lab1Uppg06.java}
-\begin{listing}[H]
-    \inputminted[]{java}{src/Lab1Uppg06.java}
+%\begin{listing}[H]
+    \inputminted[linenos]{java}{src/Lab1Uppg06.java}
     \caption{Lab1Uppg06.java}
     \label{Uppg6src}
-\end{listing}
+%\end{listing}
