@@ -6,7 +6,7 @@
 # Updated 2015-06-16.
 
 INPUT="${1}"
-OUTPUT="build"
+OUTPUT="../build"
 
 if [[ "${INPUT}" && "${INPUT-x}" ]];
 then
