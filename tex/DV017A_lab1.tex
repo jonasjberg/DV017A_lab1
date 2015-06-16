@@ -12,12 +12,7 @@
 % See LICENSE.md for full licensing information.
 % ==============================================================================
 
-
-% ==============================================================================
-% INCLUDES AND CONFIGURATION
-% ==============================================================================
 \documentclass[11pt,a4paper]{article}
-
 
 \usepackage[utf8]{inputenc}
 \inputencoding{utf8}
@@ -27,202 +22,58 @@
 
 \usepackage{textcomp}
 
-\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI
-\usepackage{amssymb}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{longtable} % Tables span across pages
-\usepackage{microtype}
-%\usepackage[swedish]{isodate}
-
-% for including source code
 \usepackage{minted}
+\usemintedstyle{murphy}
 \usepackage{verbatim}
 \usepackage{listings}
 
 
-%\setlength\parindent{0pt} % Removes all indentation from paragraphs
-
-
-% ==============================================================================
-% DOCUMENT METADATA 
-% ==============================================================================
-\title{Laboration 1}
+\title{DV017A \\ Java-programmering \\ Laboration 1}
 
 \author{\\
   Jonas Sjöberg\\
   Högskolan i Gävle,\\
   Elektronikingenjörsprogrammet,\\
-  \texttt{tel12jsg@student.hig.se}}
-  
-
-\date{}
-% ==============================================================================
-\begin{document}
-% ==============================================================================
-\maketitle
-
-\begin{center}
-\begin{tabular}{l r}
-    Data Performed: & Juni 2015 \\
-    Instructor: & Name, Name
-\end{tabular}
-\end{center}
-
-% ==============================================================================
-% ABSTRACT
-% ==============================================================================
-\begin{abstract}
-This is the abstract.
-\end{abstract}
-
-\newpage
-
-{
-%\hypersetup{linkcolor=black}
-\setcounter{tocdepth}{3}
-\tableofcontents
+  \texttt{tel12jsg [a] student.hig.se}
 }
 
-\newpage
+\date{}
 
-% ==============================================================================
-% SECTION: INTRODUCTION 
-% ==============================================================================
-\section{Introduction}\label{setup}
-This is a introduction.
+\begin{document}
+    \maketitle
 
-% ==============================================================================
-% SECTION: A FIRST SECTION
-% ==============================================================================
-\section{Uppgift 1}\label{uppgift-1}
+    \begin{center}
+    \begin{tabular}{l r}
+        Data Performed: & Juni 2015 \\
+        Instructor: & Name, Name
+    \end{tabular}
+    \end{center}
 
-\subsection{Beskrivning}
-TODO: Beskriving uppgift 1.
+    \begin{abstract}
+        This is the abstract.
+    \end{abstract}
 
-\subsection{Källkod}\label{subsection-1}
-%\subsubsection{Lab1Uppg01.java}
-\inputminted[]{java}{../src/Lab1Uppg01.java}
+    \newpage
+    %\hypersetup{linkcolor=black}
+    \setcounter{tocdepth}{3}
+    \tableofcontents
+    \newpage
 
-% ==============================================================================
-\section{Uppgift 2}\label{uppgift-2}
+    \input{intro.tex}
+    \input{uppg01.tex}
+    \input{uppg02.tex}
+    \input{uppg03.tex}
+    \input{uppg04.tex}
+    \input{uppg05.tex}
+    \input{uppg06.tex}
+    \input{uppg07.tex}
+    \input{uppg08.tex}
+    \input{uppg09.tex}
+    \input{uppg10.tex}
+    \input{resultat.tex}
 
-\subsection{Beskrivning}
-TODO: Beskriving uppgift 2.
+    \newpage
 
-\subsection{Källkod}\label{uppgift-2_src}
-%\subsubsection{Lab1Uppg02.java}
-\inputminted[]{java}{../src/Lab1Uppg02.java}
+    \input{referenser.tex}
 
-% ==============================================================================
-\section{Uppgift 3}\label{uppgift-3}
-
-\subsection{Beskrivning}
-TODO: Beskriving uppgift 3.
-
-\subsection{Källkod}\label{uppgift-3_src}
-%\subsubsection{Lab1Uppg03.java}
-\inputminted[]{java}{../src/Lab1Uppg03.java}
-
-
-% ==============================================================================
-\section{Uppgift 4}\label{uppgift-4}
-
-\subsection{Beskrivning}
-TODO: Beskriving uppgift 4.
-
-\subsection{Källkod}\label{uppgift-4_src}
-%\subsubsection{Lab1Uppg04.java}
-\inputminted[]{java}{../src/Lab1Uppg04.java}
-
-% ==============================================================================
-\section{Uppgift 5}\label{uppgift-5}
-
-\subsection{Beskrivning}
-TODO: Beskriving uppgift 5.
-
-\subsection{Källkod}\label{uppgift-5_src}
-%\subsubsection{Lab1Uppg05.java}
-\inputminted[]{java}{../src/Lab1Uppg05.java}
-
-% ==============================================================================
-\section{Uppgift 6}\label{uppgift-6}
-
-\subsection{Beskrivning}
-TODO: Beskriving uppgift 6.
-
-\subsection{Källkod}\label{uppgift-6_src}
-%\subsubsection{Lab1Uppg06.java}
-\inputminted[]{java}{../src/Lab1Uppg06.java}
-
-% ==============================================================================
-\section{Uppgift 7}\label{uppgift-7}
-
-\subsection{Beskrivning}
-TODO: Beskriving uppgift 7.
-
-\subsection{Källkod}\label{uppgift-7_src}
-%\subsubsection{Lab1Uppg07.java}
-\inputminted[]{java}{../src/Lab1Uppg07.java}
-
-% ==============================================================================
-\section{Uppgift 8}\label{uppgift-8}
-
-\subsection{Beskrivning}
-TODO: Beskriving uppgift 8.
-
-\subsection{Källkod}\label{uppgift-8_src}
-%\subsubsection{Lab1Uppg08.java}
-\inputminted[]{java}{../src/Lab1Uppg08.java}
-
-% ==============================================================================
-\section{Uppgift 9}\label{uppgift-9}
-
-\subsection{Beskrivning}
-TODO: Beskriving uppgift 9.
-
-\subsection{Källkod}\label{uppgift-9_src}
-%\subsubsection{Lab1Uppg09.java}
-\inputminted[]{java}{../src/Lab1Uppg09.java}
-
-% ==============================================================================
-\section{Uppgift 10}\label{uppgift-10}
-
-\subsection{Beskrivning}
-TODO: Beskriving uppgift 10.
-
-\subsection{Källkod}\label{uppgift-10_src}
-%\subsubsection{Lab1Uppg10.java}
-\inputminted[]{java}{../src/Lab1Uppg10.java}
-
-
-% ==============================================================================
-% SECTION: Resultat
-% ==============================================================================
-\section{Resultat}\label{setup}
-TODO: Eventuellt resultat och kommentar på hela labben.
-
-\newpage
-
-% ==============================================================================
-% SECTION: References
-% ==============================================================================
-\section{Referenser}\label{referenser}
-
-\subsection{www}\label{}
-% ==============================================================================
-
-\subsection{Literature}\label{}
-% ==============================================================================
-
-\subsection{Source files}\label{sources}
-% ==============================================================================
-Full source, including spice simulation files, CSV data, schematics, etc
-TODO: is available at https://github.com/jonasjberg/FIX_URL
-
-
-% ==============================================================================
 \end{document}
-% ==============================================================================
