@@ -1,0 +1,212 @@
+% ==============================================================================
+% TITLE 
+% SUBTITLE 
+% ---------------------------------
+% Last updated <YYYY-MM-DD> 
+%
+% Author:
+% Jonas Sjöberg     <tel12jsg@student.hig.se>
+% 
+% License:
+% Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+% See LICENSE.md for full licensing information.
+% ==============================================================================
+
+
+% ==============================================================================
+% INCLUDES AND CONFIGURATION
+% ==============================================================================
+\documentclass[11pt,a4paper]{article}
+
+
+\usepackage[utf8]{inputenc}
+\inputencoding{utf8}
+\usepackage[swedish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage{textcomp}
+
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable} % Tables span across pages
+\usepackage{microtype}
+%\usepackage[swedish]{isodate}
+
+% for including source code
+\usepackage{minted}
+\usepackage{verbatim}
+\usepackage{listings}
+
+
+%\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+
+% ==============================================================================
+% DOCUMENT METADATA 
+% ==============================================================================
+\title{Laboration 1}
+
+\author{\\
+  Jonas Sjöberg\\
+  Högskolan i Gävle,\\
+  Elektronikingenjörsprogrammet,\\
+  \texttt{tel12jsg@student.hig.se}}
+  
+
+\date{}
+% ==============================================================================
+\begin{document}
+% ==============================================================================
+\maketitle
+
+\begin{center}
+\begin{tabular}{l r}
+    Data Performed: & DD Month Year \\
+    Instructor: & Name, Name
+\end{tabular}
+\end{center}
+
+% ==============================================================================
+% ABSTRACT
+% ==============================================================================
+\begin{abstract}
+This is the abstract.
+\end{abstract}
+
+\newpage
+
+{
+%\hypersetup{linkcolor=black}
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+
+\newpage
+
+% ==============================================================================
+% SECTION: INTRODUCTION 
+% ==============================================================================
+\section{Introduction}\label{setup}
+This is a introduction.
+
+% ==============================================================================
+% SECTION: A FIRST SECTION
+% ==============================================================================
+\section{Uppgift 1}\label{section-1}
+% ==============================================================================
+
+\subsection{Beskrivning}
+
+
+
+\subsection{Source}\label{subsection-1}
+% ==============================================================================
+
+
+
+%\verbatiminput{Lab1Uppg01.java}
+
+
+%\include{src/iconverted.java.tex./home/spock/HIG/DV017A_Inledande-programming-i-Java/lab1/latex-template/template}
+
+\inputminted[]{java}{src/Lab1Uppg01.java}
+
+
+\begin{figure}[htbp]
+    \centering
+        \includegraphics[scale=0.5]{img/filename.png}
+    \caption{Image caption}
+    \label{fig:image-label}
+\end{figure}
+
+The image in Figure~\ref{fig:image-label} is a image.
+
+This is some math;
+
+\begin{equation}
+    A_v = \frac{R_2}{R_1}
+\end{equation}
+
+This is more math;
+
+\begin{align} 
+A_v     &= \frac{V_{out}}{V_{in}} = -\frac{R_2}{R_1}\\
+        &= \frac{100k\Omega}{10k\Omega} = 10\times\\
+        &= 20 \times \log{\frac{10}{1}} = 20dB  
+\end{align}
+
+
+\subsection{A second subsection}\label{subsection-2}
+% ==============================================================================
+
+The table Table~\ref{table-1} is a table.
+
+\begin{longtable}[c]{@{}lll@{}}
+\toprule\addlinespace
+$Blrrp_{in}$ (V) & $Blrrp_{out}$ (V) & $Meow$ ($\times$)
+\\\addlinespace
+\midrule\endhead
+6 & 6 & 6
+\\\addlinespace
+6 & 6 & 6
+\\\addlinespace
+6 & 6 & 6
+\\\addlinespace
+\bottomrule
+\addlinespace
+\caption{Table caption}
+\label{table-1}
+\end{longtable}
+
+
+% ==============================================================================
+% SECTION: Non-inverting DC Amplifier
+% ==============================================================================
+\section{Non-inverting DC Amplifier}\label{non-inverting-dc-amplifier}
+% ==============================================================================
+
+\subsection{Theory}\label{non-inverting-dc-amplifier-theory}
+% ==============================================================================
+
+\subsection{Measurements}\label{measurements-2}
+% ==============================================================================
+
+\subsection{Oscilloscope shots}\label{noninvAC-oscilloscope-shots}
+% ==============================================================================
+
+
+% ==============================================================================
+% SECTION: Results
+% ==============================================================================
+\section{Results}\label{setup}
+These are the results.
+
+\newpage
+
+% ==============================================================================
+% SECTION: References
+% ==============================================================================
+\section{References}\label{references}
+
+\subsection{www}\label{literature}
+% ==============================================================================
+Interwebs.
+
+\subsection{Literature}\label{literature}
+% ==============================================================================
+Books and such.
+
+\subsection{Source files}\label{sources}
+% ==============================================================================
+Full source, including spice simulation files, CSV data, schematics, etc
+is available at https://github.com/jonasjberg/latex-template
+
+
+% ==============================================================================
+\end{document}
+% ==============================================================================
