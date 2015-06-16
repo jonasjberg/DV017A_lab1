@@ -34,7 +34,7 @@ public class Lab1Uppg02 {
         Scanner scan = new Scanner(System.in);
         int input, sum = 0;
         double average = 0;
-        long product = 0; /* Kan räkna med att produkten kan bli väldigt stor */
+        long product = 1; /* Kan räkna med att produkten kan bli väldigt stor */
 
         /* Fråga efter 'ITERATIONS' antal tal. Pussla ihop strängar och hämta
          * svenska räkneord från arrayen 'GRUNDTAL'. */
