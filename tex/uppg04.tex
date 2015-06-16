@@ -28,15 +28,23 @@ försöker sedan returnera nästa "token" i raden.
 \begin{description}
     \item[String next()] Finds and retur:s the next complete token from this scanner.
     \item [boolean hasNextInt()] Returns true if the next token in this scanner's input can be interpreted as an int value in the default radix using the nextInt() method.
-        \footnotemark
-\end{description}
 \footnote{\url{http://docs.oracle.com/javase/7/docs/api/java/util/Scanner.html}}
+\end{description}
 
 Då den inre \texttt{while}-loopen avslutas sätts variabeln \texttt{age} till 
 nästa integer som står på tur i kön med \texttt{scan.nextInt()}.
 \par Den yttre \texttt{do}-loopen exekveras så länge den inmatade åldern \texttt{age}
 är mindre eller lika med noll. När det villkoret inte längre gäller antas \texttt{age}
 hålla en giltlig ålder som skrivs ut med hjälp av \texttt{System.out.println}.
+
+\subsubsection{Kommentar}
+Det här programmet har någorlunda skydd mot felaktig inmatning och är således
+relativt svårkraschat. Figur \ref{fig:screenshot-04} visar en serie körningar
+med diverse märklig inmatning. Så länge inga escape-sekvenser följer med så
+klarar det sig från att krascha.
+\par En lösning lik denna borde också kompletteras med undantagshantering för att
+gardera mot de fall då programmet faktiskt stöter på problem och kraschar till
+följd av oväntad inmatning.
 
 \subsubsection{Källkod}\label{uppgift-4_src}
 %\begin{listing}[H]
