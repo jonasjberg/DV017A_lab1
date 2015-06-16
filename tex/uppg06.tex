@@ -36,6 +36,11 @@ räknar ner från parameter värdet \texttt{start} med hjälp av en \texttt{do}-
 noll nästan uteslutande är någon form av felkod, t.ex. $127$ för ''"command not found"''\ 
 \footnote{\url{http://www.tldp.org/LDP/abs/html/exitcodes.html}}
 
+\par Vid körning i \texttt{Linux 3.19.0-21-generic} med terminalemulatorn \texttt{zsh} version \texttt{5.0.7} skrivs
+märkliga tecken ut vid körning. Misstänker att detta är till följd av användningen av \texttt{'\\n'} newline-symboler som inte är plattformsspecifika. Det är rekommenderat
+att använda \texttt{'\%n'} som genererar en plattformsspecfik newline-symbol.
+\footnote{\url{http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Formatter.html#syntax}}
+
 
 \subsubsection{Källkod}\label{uppgift-6_src}
 %\begin{listing}[H]
