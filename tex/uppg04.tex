@@ -1,7 +1,6 @@
 \section{Uppgift 4}\label{uppgift-4}
 
-\subsection{Beskrivning}
-\subsubsection*{Instruktioner}
+\subsection{Instruktioner}
 \begin{verbatim}
 4. Skriv ett program som frågar efter åldern. Om den inmatade åldern är mindre
    än 0 så ska "Du har matat in fel ålder!" skrivas ut, annars ska "Hej, din XX
@@ -13,7 +12,8 @@
     Hej, din 28 åring!
 \end{verbatim}
 
-\subsection{Kommentar}
+\subsection{Lösning}
+\subsubsection{Funktion}
 För att lösa det här problemet används nästlade loopar. En yttre
 \texttt{do}-loop och en inre \texttt{while}-loop.
 Metoderna för ett objekt \texttt{scan} från klassen \texttt{Scanner} används
@@ -38,8 +38,7 @@ nästa integer som står på tur i kön med \texttt{scan.nextInt()}.
 är mindre eller lika med noll. När det villkoret inte längre gäller antas \texttt{age}
 hålla en giltlig ålder som skrivs ut med hjälp av \texttt{System.out.println}.
 
-\subsection{Källkod}\label{uppgift-4_src}
-\subsubsection*{Lab1Uppg04.java}
+\subsubsection{Källkod}\label{uppgift-4_src}
 %\begin{listing}[H]
     \inputminted[linenos]{java}{src/Lab1Uppg04.java}
     \caption{Lab1Uppg04.java}

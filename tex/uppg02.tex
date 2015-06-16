@@ -1,7 +1,6 @@
 \section{Uppgift 2}\label{uppgift-2}
 
-\subsection{Beskrivning}
-\subsubsection*{Instruktioner}
+\subsection{Instruktioner}
 \begin{verbatim}
 2. Skriv ett program som skriver ut summan, medelvärdet och produkten av tre
    heltal.  De tre heltalen ska användaren skriva in från tangentbordet när
@@ -17,20 +16,22 @@
     Produkten av talen är 15000.
 \end{verbatim}
 
-\subsubsection*{Kommentar}
+\subsection{Lösning}
+\subsubsection{Funktion}
 Programmet använder \texttt{static final} i början av programmet för variabler
 som inte ska ändras under exekvering.  Variabler med enbart versaler är en
 slags globala variabler som kan modifieras av programmeraren.
 \par Räkneord sparas i sträng-arrays \texttt{GRUNDTAL} och
 \texttt{ORDNINGSTAL}, för att hämtas och skrivas ut vid exekvering.
+
+\subsubsection{Kommentar}
 \par Rad 33, \texttt{@SuppressWarnings("resource")} syftar till att undertrycka
 varningar från Eclipse och gör ingen faktisk skillnad på programmets funktion.
 \par Programmet saknar filtrering av indata, vilket är ett stort problem då det
 innebär stora säkerhetsrisker och möjliga odefinerade, alternativt outforskade
-skeenden.
+skeenden. Mer om detta senare..
 
-\subsection{Källkod}\label{uppgift-2_src}
-\subsubsection*{Lab1Uppg02.java}
+\subsubsection{Källkod}\label{uppgift-2_src}
 %\begin{listing}[H]
     \inputminted[linenos]{java}{src/Lab1Uppg02.java}
     \caption{Lab1Uppg02.java}

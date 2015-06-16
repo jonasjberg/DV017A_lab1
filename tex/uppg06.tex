@@ -1,14 +1,13 @@
 \section{Uppgift 6}\label{uppgift-6}
 
-\subsection{Beskrivning}
-\subsubsection*{Instruktioner}
+\subsection{Instruktioner}
 \begin{verbatim}
 6. Skriv två program som ger samma utskrift som den i uppgift 5, men använd
    istället en for- loop i ena programmet och en do-loop i det andra.
 \end{verbatim}
 
-\subsection{Kommentar}
-\subsubsection*{}
+\subsection{Lösning}
+\subsubsection{Funktion}
 Programmet använder återigen samma logik för att kontrollera korrekt inmatning
 men till skillnad från i Uppgift \ref{uppgift-4} och Uppgift \ref{uppgift-5}
 används en funktion \texttt{getUserInput()}.
@@ -30,15 +29,15 @@ räknar ner från parametervärdet \texttt{start} med hjälp av en \texttt{for}-
 räknar ner från parameter värdet \texttt{start} med hjälp av en \texttt{do}-loop
 \end{description}
 
-\\
+
+\subsubsection{Kommentar}
 \par I slutet av \texttt{main}-metoden avslutas programmet med
 \texttt{System.exit(0);} där $0$ indikerar lyckad exekvering och allt annat än
 noll nästan uteslutande är någon form av felkod, t.ex. $127$ för ''"command not found"''\ 
 \footnote{\url{http://www.tldp.org/LDP/abs/html/exitcodes.html}}
 
 
-\subsection{Källkod}\label{uppgift-6_src}
-\subsubsection*{Lab1Uppg06.java}
+\subsubsection{Källkod}\label{uppgift-6_src}
 %\begin{listing}[H]
     \inputminted[linenos]{java}{src/Lab1Uppg06.java}
     \caption{Lab1Uppg06.java}
