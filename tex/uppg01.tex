@@ -39,9 +39,12 @@
 \subsubsection*{Kommentar}
 Det är något oklart vad som efterfrågas. I problembeskrivningen specifieras
 inte huruvida målvariabelns datatyp ska vara lämpad för att lagra resultatet av
-beräkningen, på det vis att ingen data går förlorad genom trunkering eller
+beräkningen på det vis att ingen data går förlorad genom trunkering eller
 avrundning.  Eller om målvariabeln helt enkelt ska ha samma datatyp som de
-övriga operanderna.
+övriga operanderna. Jag har valt att vara konservativ i fråga om "resurser" 
+och använder de datatyper som krävs för att lagra den information som ska
+behandlas. Om exekversingstid och/eller lagringsutrymme inte är någon faktor att
+beakta kunde alla variabler få vara 64-bitars floats.
 
 %Bla \mintinline{latex}{\mintinline{latex}{your $code$ goes here}} bla.
 
@@ -57,7 +60,13 @@ från The Java Language Specification, Java SE 8 Edition
 
 
 \subsection{Källkod}\label{subsection-1}
-\subsubsection*{Lab1Uppg01.java}
-\inputminted[]{java}{src/Lab1Uppg01.java}
+%\subsubsection*{Lab1Uppg01.java}
+\begin{listing}[H]
+    \inputminted[linenos=true]{java}{src/Lab1Uppg01.java}
+    \caption{Lab1Uppg01.java}
+    \label{Uppg1src}
+\end{listing}
+
+
 
 
