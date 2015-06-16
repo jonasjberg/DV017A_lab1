@@ -19,8 +19,8 @@ public class Lab1Uppg08 {
 		int countToNumber;
 		
 		/* Hämta information från användaren. */
-		multTable = getUserInput("Vilken multiplikationstabell önskas?");
-		countToNumber = getUserInput("Hur långt ska jag räkna?");
+		multTable = getUserInput("Vilken multiplikationstabell önskas? ");
+		countToNumber = getUserInput("Hur långt ska jag räkna? ");
 		
 		/* Utför beräkning och skriv ut resultat. 
 		 * For-loopen exekverar en gång per uträkning och utskriftsrad. */
