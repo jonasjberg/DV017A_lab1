@@ -23,33 +23,33 @@ Uppgifter:
    variabeldeklarationerna. Din uppgift är att fylla i rätt datatyp vid
    respektive deklaration. Provkör sedan programmet:
 
-   public class Datatyper
-   {
-       public static void main(String[] args)
-       {
-           ... data1 = true;
-           ... data2 = 45.8F;
-           ... data3 = 29;
-           ... data4 = data3 < 10;
-           ... data5 = 12 / 5;
-           ... data6 = data3 * data5;
-           ... data7 = 10 % 3;
-           ... data8 = "Java programmering";
-           ... data9 = 'b';
-           ... data10 = (float)data5 / 4;
-
-             System.out.println     ("Variabeln     data1: " + data1);
-             System.out.println     ("Variabeln     data2: " + data2);
-             System.out.println     ("Variabeln     data3: " + data3);
-             System.out.println     ("Variabeln     data4: " + data4);
-             System.out.println     ("Variabeln     data5: " + data5);
-             System.out.println     ("Variabeln     data6: " + data6);
-             System.out.println     ("Variabeln     data7: " + data7);
-             System.out.println     ("Variabeln     data8: " + data8);
-             System.out.println     ("Variabeln     data9: " + data9);
-             System.out.println     ("Variabeln     data10: " + data10);
-         }
-     }
+        public class Datatyper
+        {
+            public static void main(String[] args)
+            {
+                ... data1 = true;
+                ... data2 = 45.8F;
+                ... data3 = 29;
+                ... data4 = data3 < 10;
+                ... data5 = 12 / 5;
+                ... data6 = data3 * data5;
+                ... data7 = 10 % 3;
+                ... data8 = "Java programmering";
+                ... data9 = 'b';
+                ... data10 = (float)data5 / 4;
+        
+                  System.out.println     ("Variabeln     data1: " + data1);
+                  System.out.println     ("Variabeln     data2: " + data2);
+                  System.out.println     ("Variabeln     data3: " + data3);
+                  System.out.println     ("Variabeln     data4: " + data4);
+                  System.out.println     ("Variabeln     data5: " + data5);
+                  System.out.println     ("Variabeln     data6: " + data6);
+                  System.out.println     ("Variabeln     data7: " + data7);
+                  System.out.println     ("Variabeln     data8: " + data8);
+                  System.out.println     ("Variabeln     data9: " + data9);
+                  System.out.println     ("Variabeln     data10: " + data10);
+              }
+          }
 
 
 2. Skriv ett program som skriver ut summan, medelvärdet och produkten av tre
@@ -57,13 +57,14 @@ Uppgifter:
    programmet körs. Programmets utskrift kan t.ex se ut så här, det som skrivs
    in från tangentbordet är markerat med fetstil/understrykning:
 
-    Skriv in tre heltal.
-    Skriv in det första talet: *20*
-    Skriv in det andra talet: *30*
-    Skriv in det tredje talet: *25*
-    Summan av talen är 75.
-    Medelvärdet av talen är 25.
-    Produkten av talen är 15000.
+        Skriv in tre heltal.
+        Skriv in det första talet: *20*
+        Skriv in det andra talet: *30*
+        Skriv in det tredje talet: *25*
+        Summan av talen är 75.
+        Medelvärdet av talen är 25.
+        Produkten av talen är 15000.
+
 
 
 3. Skriv ett program som räknar om mil till kilometer. Användaren ska mata in
@@ -71,9 +72,9 @@ Uppgifter:
    och skriva ut hur många kilometer det blev. Exempel på utskrift, användarens
    inmatning är markerat med fetstil/understrykning:
 
-    Program som konverterar mil till km.
-    Skriv in antal mil: *35.4*
-    Motsvarande antal km: 354
+        Program som konverterar mil till km.
+        Skriv in antal mil: *35.4*
+        Motsvarande antal km: 354
 
 
 4. Skriv ett program som frågar efter åldern. Om den inmatade åldern är mindre
@@ -82,8 +83,8 @@ Uppgifter:
    ett exempel på hur utskriften kan se ut, det som skrivs in från
    tangentbordet är markerat med fetstil/understrykning:
 
-    Hur gammal är du? 28
-    Hej, din 28 åring!
+        Hur gammal är du? 28
+        Hej, din 28 åring!
 
 
 5. Skriv ett program där användaren ska skriva in ett heltal. Programmet ska
@@ -91,8 +92,8 @@ Uppgifter:
    av en while-loop. Exempel på utskrift, användarens inmatning är markerat med
    fetstil/understrykning:
 
-    Ange det heltal som du vill räkna ner från: *6*
-    6 5 4 3 2 1
+        Ange det heltal som du vill räkna ner från: *6*
+        6 5 4 3 2 1
 
 
 6. Skriv två program som ger samma utskrift som den i uppgift 5, men använd
@@ -104,27 +105,27 @@ Uppgifter:
    påstående a) – e) lagra värdet av påståendet i den booleska variabeln svar
    och därefter skriva ut värdet av svar , försett med lämplig ledtext:
 
-    a) Talet var1 är jämnt delbart med 7.
-    b) Talet var3 är inte jämnt delbart med talet var2.
-    c) Talet var1 är större än minst något av talen var2 och var3.
-    d) Talet var1 är större än talet var2, som i sin tur är större än talet var3.
-    e) Talet var1 är större än ett av talen var2 och var3, men inte större än båda.
+        a) Talet var1 är jämnt delbart med 7.
+        b) Talet var3 är inte jämnt delbart med talet var2.
+        c) Talet var1 är större än minst något av talen var2 och var3.
+        d) Talet var1 är större än talet var2, som i sin tur är större än talet var3.
+        e) Talet var1 är större än ett av talen var2 och var3, men inte större än båda.
 
-   Tips: För att kolla om något tal är jämnt delbart med ett annat,
-         använd modulus-operatorn %!
+   Tips: För att kolla om något tal är jämnt delbart med ett annat, använd
+   modulus-operatorn %!
 
 
 8. Skriv ett program som skriver ut en viss multiplikationstabell. Den som kör
    programmet ska ange önskad multiplikationstabell och hur långt programmet ska
    räkna. Exempel på utskrift om man väljer tabell 8 och upp till 4:
 
-    Vilken mulitiplikationstabell önskas? *8*
-    Hur långt ska jag räkna? *4*
+        Vilken mulitiplikationstabell önskas? *8*
+        Hur långt ska jag räkna? *4*
 
-    8 * 1 = 8
-    8 * 2 = 16
-    8 * 3 = 24
-    8 * 4 = 32
+        8 * 1 = 8
+        8 * 2 = 16
+        8 * 3 = 24
+        8 * 4 = 32
 
 
 9. Skriv ett program som summerar alla jämna tal från och med 0 t.o.m 200 med
