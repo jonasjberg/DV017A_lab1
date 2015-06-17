@@ -2,7 +2,7 @@
  *  DV017A :: Grundläggande programmering i Java
  *  ============================================
  *  Uppdaterad 2015-06-15
- *  Jonas Sjöberg 860224-7614
+ *  Jonas Sjöberg 860224
  *  Högskolan i Gävle.
  *  <tel12jsg@student.hig.se>
  *
