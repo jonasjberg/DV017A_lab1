@@ -10,7 +10,7 @@
                      Högskolan i Gävle
 
                   tel12jsg@student.hig.se
-                   jonasjberg@github.com
+               https://github.com/jonasjberg
 
 
 
